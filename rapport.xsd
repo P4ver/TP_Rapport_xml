@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:element name="rapport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mandat" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            
+                            <xs:element name="expediteur" type="personneType"/>
+                            
+                            <xs:element name="destinataire" type="personneType"/>
+                            
+                        </xs:sequence>
+                        
+                        <xs:attribute name="num" type="xs:string" use="required"/>
+                        <xs:attribute name="date" type="xs:string" use="required"/>
+                        <xs:attribute name="montant" type="xs:decimal" use="required"/>
+                        <xs:attribute name="etat" type="xs:string" use="required"/>
+                        
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="personneType">
+        <xs:attribute name="cin" type="xs:string" use="required"/>
+        <xs:attribute name="nom" type="xs:string" use="required"/>
+        <xs:attribute name="prenom" type="xs:string" use="required"/>
+        <xs:attribute name="ville" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,27 @@
+rapport
+│
+├── mandat
+│   ├── @num = "7124536"
+│   ├── @date = "2007-1-1"
+│   ├── @montant = "1000"
+│   ├── @etat = "reçu"
+│   │
+│   ├── expediteur
+│   │   ├── @cin
+│   │   ├── @nom
+│   │   ├── @prenom
+│   │   └── @ville
+│   │
+│   └── destinataire
+│       ├── @cin
+│       ├── @nom
+│       ├── @prenom
+│       └── @ville
+│
+├── mandat (7124537)
+│   ├── expediteur
+│   └── destinataire
+│
+└── mandat (7124538)
+    ├── expediteur
+    └── destinataire
